@@ -1,0 +1,9 @@
+alpaca-py
+pandas
+pandas-ta
+yfinance
+python-dotenv
+requests
+google-generativeai
+vaderSentiment
+pytz
