@@ -1,0 +1,150 @@
+2025-11-23 00:33:42,446 - INFO - --- Alpaca Bot V4 Started ---
+2025-11-23 00:33:43,088 - INFO - --- 2025-11-23 03:33:43 -05:00 ---
+2025-11-23 00:33:43,088 - INFO - Market Closed.
+2025-11-23 00:33:43,088 - INFO - Sleeping 29.95 hours until open.
+2025-11-23 00:34:02,367 - INFO - Stopping Bot.
+2025-11-23 00:39:00,620 - INFO - === Checking Strategy for TEST_SYM ===
+2025-11-23 00:39:03,601 - INFO - Daily Trend (TEST_SYM): DOWN
+2025-11-23 00:39:03,601 - INFO - Skipping TEST_SYM: Daily trend is not UP.
+2025-11-23 00:39:03,601 - INFO - No position for TEST_SYM.
+2025-11-23 00:39:03,604 - INFO - Hourly Trend (Golden Cross Check): DOWN
+2025-11-23 00:39:03,604 - INFO - Skipping TEST_SYM: Hourly Golden Cross not confirmed.
+2025-11-23 00:39:03,606 - INFO - === Checking Strategy for TEST_SYM ===
+2025-11-23 00:39:03,607 - WARNING - Not enough daily data for TEST_SYM.
+2025-11-23 00:39:31,899 - INFO - === Checking Strategy for TEST_SYM ===
+2025-11-23 00:39:32,136 - INFO - Daily Trend (TEST_SYM): DOWN
+2025-11-23 00:39:32,137 - INFO - Skipping TEST_SYM: Daily trend is not UP.
+2025-11-23 00:39:32,137 - INFO - No position for TEST_SYM.
+2025-11-23 00:39:32,141 - INFO - Hourly Trend (Golden Cross Check): DOWN
+2025-11-23 00:39:32,141 - INFO - Skipping TEST_SYM: Hourly Golden Cross not confirmed.
+2025-11-23 00:39:32,143 - INFO - === Checking Strategy for TEST_SYM ===
+2025-11-23 00:39:32,148 - INFO - Daily Trend (TEST_SYM): DOWN
+2025-11-23 00:39:32,148 - INFO - Skipping TEST_SYM: Daily trend is not UP.
+2025-11-23 00:39:32,148 - INFO - Holding 10 TEST_SYM. Checking for Stop Loss upgrade...
+2025-11-23 00:39:32,150 - INFO - Found Fixed Stop for TEST_SYM. Upgrading to Trailing Stop...
+2025-11-23 00:39:32,150 - INFO - Upgraded to Trailing Stop (2.5%) for TEST_SYM.
+2025-11-23 00:39:32,151 - INFO - Already holding TEST_SYM. Skipping entry check.
+2025-11-23 00:55:22,987 - INFO - === Checking Strategy for AAPL ===
+2025-11-23 00:55:23,275 - INFO - Daily Trend (AAPL): DOWN
+2025-11-23 00:55:23,275 - INFO - Skipping AAPL: Daily trend is not UP.
+2025-11-23 00:55:23,275 - INFO - No position for AAPL.
+2025-11-23 00:55:23,280 - INFO - Hourly Trend (Golden Cross Check): DOWN
+2025-11-23 00:55:23,280 - INFO - Skipping AAPL: Hourly Golden Cross not confirmed.
+2025-11-23 00:56:05,520 - INFO - === Checking Strategy for AAPL ===
+2025-11-23 00:56:05,808 - INFO - Daily Trend (AAPL): UP
+2025-11-23 00:56:05,808 - INFO - No position for AAPL.
+2025-11-23 00:56:05,810 - INFO - Hourly Trend (Golden Cross Check): UP
+2025-11-23 00:56:05,822 - ERROR - Error checking AAPL: 'VWAP_D'
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'VWAP_D'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/ct/Documents/Code Projects/alpaca_bot/alpaca_bot_v4.py", line 236, in check_strategy
+    vwap = latest['VWAP_D']
+           ~~~~~~^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pandas/core/series.py", line 1133, in __getitem__
+    return self._get_value(key)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pandas/core/series.py", line 1249, in _get_value
+    loc = self.index.get_loc(label)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'VWAP_D'
+2025-11-23 00:56:35,246 - INFO - === Checking Strategy for AAPL ===
+2025-11-23 00:56:35,531 - INFO - Daily Trend (AAPL): UP
+2025-11-23 00:56:35,531 - INFO - No position for AAPL.
+2025-11-23 00:56:35,533 - INFO - Hourly Trend (Golden Cross Check): UP
+2025-11-23 00:56:35,548 - INFO - AAPL Intraday: Close=$150.00, SMA20=150.00, SMA50=150.00, RSI=100.00, VWAP=150.00
+2025-11-23 00:56:35,548 - INFO - No entry signal for AAPL.
+2025-11-23 00:57:13,470 - INFO - === Checking Strategy for AAPL ===
+2025-11-23 00:57:13,761 - INFO - Daily Trend (AAPL): UP
+2025-11-23 00:57:13,761 - INFO - No position for AAPL.
+2025-11-23 00:57:13,763 - INFO - Hourly Trend (Golden Cross Check): UP
+2025-11-23 00:57:13,771 - INFO - AAPL Intraday: Close=$195.00, SMA20=195.50, SMA50=185.90, RSI=76.47, VWAP=195.53
+2025-11-23 00:57:13,771 - INFO - No entry signal for AAPL.
+2025-11-23 00:57:45,351 - INFO - === Checking Strategy for AAPL ===
+2025-11-23 00:57:45,637 - INFO - Daily Trend (AAPL): UP
+2025-11-23 00:57:45,637 - INFO - No position for AAPL.
+2025-11-23 00:57:45,639 - INFO - Hourly Trend (Golden Cross Check): UP
+2025-11-23 00:57:49,778 - INFO - AAPL Intraday: Close=$198.00, SMA20=198.00, SMA50=194.55, RSI=81.25, VWAP=197.93
+2025-11-23 00:57:49,778 - INFO - No entry signal for AAPL.
+2025-11-23 00:58:27,259 - INFO - === Checking Strategy for AAPL ===
+2025-11-23 00:58:27,628 - INFO - Daily Trend (AAPL): UP
+2025-11-23 00:58:27,629 - INFO - No position for AAPL.
+2025-11-23 00:58:27,630 - INFO - Hourly Trend (Golden Cross Check): UP
+2025-11-23 00:59:32,902 - INFO - === Checking Strategy for AAPL ===
+2025-11-23 00:59:32,903 - INFO - Daily Trend (AAPL): UP
+2025-11-23 00:59:32,903 - INFO - No position for AAPL.
+2025-11-23 00:59:32,903 - INFO - Hourly Trend (Golden Cross Check): UP
+2025-11-23 00:59:32,904 - INFO - AAPL Intraday: Close=$155.00, SMA20=152.00, SMA50=150.00, RSI=50.00, VWAP=154.00
+2025-11-23 00:59:32,904 - INFO - BUY SIGNAL for AAPL!
+2025-11-23 00:59:32,904 - INFO - Buying 258 shares of AAPL at Market. Stop Loss: $151.12
+2025-11-23 00:59:32,905 - INFO - Order submitted for AAPL.
+2025-11-23 00:59:33,363 - INFO - Discord notification sent successfully.
+2025-11-23 01:08:26,384 - INFO - Detected SELL FILL for AAPL: 100 @ $150.00
+2025-11-23 01:10:19,832 - INFO - === Checking Strategy for NVDA ===
+2025-11-23 01:10:19,833 - INFO - Daily Trend (NVDA): UP
+2025-11-23 01:10:19,833 - INFO - No position for NVDA.
+2025-11-23 01:10:19,834 - INFO - Hourly Trend (Golden Cross Check): UP
+2025-11-23 01:10:19,834 - INFO - NVDA Intraday: Close=$105.00, SMA20=102.00, SMA50=100.00, RSI=50.00, VWAP=104.00
+2025-11-23 01:10:19,835 - INFO - BUY SIGNAL for NVDA!
+2025-11-23 01:10:19,835 - INFO - Buying 380 shares of NVDA at Market. Stop Loss: $102.38
+2025-11-23 01:10:19,836 - INFO - Order submitted for NVDA.
+2025-11-23 01:10:20,219 - INFO - Discord notification sent successfully.
+2025-11-23 01:10:20,222 - INFO - Detected SELL FILL for AAPL: 50 @ $180.00
+2025-11-23 01:10:20,660 - INFO - Discord notification sent successfully.
+2025-11-23 01:13:46,546 - INFO - Detected SELL FILL for AAPL: 10.0 @ $150.0
+2025-11-23 01:14:59,837 - INFO - === Checking Strategy for NVDA ===
+2025-11-23 01:14:59,837 - INFO - Daily Trend (NVDA): UP
+2025-11-23 01:14:59,837 - INFO - No position for NVDA.
+2025-11-23 01:14:59,838 - INFO - Hourly Trend (Golden Cross Check): UP
+2025-11-23 01:14:59,839 - INFO - NVDA Intraday: Close=$105.00, SMA20=102.00, SMA50=100.00, RSI=50.00, VWAP=104.00
+2025-11-23 01:14:59,839 - INFO - BUY SIGNAL for NVDA!
+2025-11-23 01:14:59,839 - INFO - Buying 380 shares of NVDA at Market. Stop Loss: $102.38
+2025-11-23 01:14:59,840 - INFO - Order submitted for NVDA.
+2025-11-23 01:15:00,278 - INFO - Discord notification sent successfully.
+2025-11-23 01:15:00,281 - INFO - Detected SELL FILL for AAPL: 50.0 @ $180.0
+2025-11-23 01:15:00,729 - INFO - Discord notification sent successfully.
+2025-11-30 23:14:02,544 - INFO - === Checking Strategy for NVDA ===
+2025-11-30 23:14:02,545 - INFO - Daily Trend (NVDA): UP
+2025-11-30 23:14:02,545 - INFO - No position for NVDA.
+2025-11-30 23:14:02,546 - INFO - Hourly Trend (Golden Cross Check): UP
+2025-11-30 23:14:02,546 - INFO - NVDA Intraday: Close=$105.00, SMA20=102.00, SMA50=100.00, RSI=50.00, VWAP=104.00
+2025-11-30 23:14:02,547 - INFO - BUY SIGNAL for NVDA!
+2025-11-30 23:14:02,547 - INFO - Buying 380 shares of NVDA at Market. Stop Loss: $102.38
+2025-11-30 23:14:02,547 - INFO - Order submitted for NVDA.
+2025-11-30 23:14:03,129 - INFO - Discord notification sent successfully.
+2025-11-30 23:14:03,133 - INFO - Detected SELL FILL for AAPL: 50.0 @ $180.0
+2025-11-30 23:14:03,436 - INFO - Discord notification sent successfully.
+2025-11-30 23:14:25,088 - INFO - === Checking Strategy for NVDA ===
+2025-11-30 23:14:25,088 - INFO - Daily Trend (NVDA): UP
+2025-11-30 23:14:25,088 - INFO - No position for NVDA.
+2025-11-30 23:14:25,089 - INFO - Hourly Trend (Golden Cross Check): UP
+2025-11-30 23:14:25,089 - INFO - NVDA Intraday: Close=$105.00, SMA20=102.00, SMA50=100.00, RSI=50.00, VWAP=104.00
+2025-11-30 23:14:25,089 - INFO - BUY SIGNAL for NVDA!
+2025-11-30 23:14:25,090 - INFO - Buying 380 shares of NVDA at Market. Stop Loss: $102.38
+2025-11-30 23:14:25,090 - INFO - Order submitted for NVDA.
+2025-11-30 23:14:25,420 - INFO - Discord notification sent successfully.
+2025-11-30 23:14:25,423 - INFO - Detected SELL FILL for AAPL: 50.0 @ $180.0
+2025-11-30 23:14:25,724 - INFO - Discord notification sent successfully.
+2025-11-30 23:19:13,525 - INFO - === Checking Strategy for NVDA ===
+2025-11-30 23:19:13,526 - INFO - Daily Trend (NVDA): UP
+2025-11-30 23:19:13,526 - INFO - No position for NVDA.
+2025-11-30 23:19:13,526 - INFO - Hourly Trend (Golden Cross Check): UP
+2025-11-30 23:19:13,526 - INFO - NVDA Intraday: Close=$105.00, SMA20=102.00, SMA50=100.00, RSI=50.00, VWAP=104.00
+2025-11-30 23:19:13,527 - INFO - BUY SIGNAL for NVDA!
+2025-11-30 23:19:13,527 - INFO - Buying 380 shares of NVDA at Market. Stop Loss: $102.38
+2025-11-30 23:19:13,527 - INFO - Order submitted for NVDA.
+2025-11-30 23:19:13,945 - INFO - Discord notification sent successfully.
+2025-11-30 23:19:13,947 - INFO - Detected SELL FILL for AAPL: 50.0 @ $180.0
+2025-11-30 23:19:14,285 - INFO - Discord notification sent successfully.
